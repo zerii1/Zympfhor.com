@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Private communication with no trace — no metadata and no reliance on intermediary servers."
+    />
+    <title>Detoks płuc Zympfhor</title>
+    <link rel="icon" href="favicon.svg?v=1.0.0" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon.svg?v=1.0.0" />
+    <script>
+      (function () {
+        function storeMode() {
+          try {
+            var q = (new URLSearchParams(location.search).get("store") || "")
+              .toLowerCase()
+              .trim();
+            if (q === "ios" || q === "iphone" || q === "ipad") return "ios";
+            if (q === "android") return "android";
+            if (q === "desktop" || q === "pc" || q === "web") return "desktop";
+          } catch (e) {}
+          var ua = navigator.userAgent || "";
+          if (/iPad|iPhone|iPod/.test(ua)) return "ios";
+          if (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)
+            return "ios";
+          if (/Android/i.test(ua)) return "android";
+          return "desktop";
+        }
+        document.documentElement.setAttribute("data-store-mode", "desktop");
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Syne:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css?v=1.0.0" />
+  </head>
+  <body>
+    <div class="page">
+      <section class="hero reveal is-visible" id="top">
+        <div class="hero__inner">
+          <div class="hero__copy">
+            <h1 class="hero__title" data-i18n-html="hero.titleHtml">
+              <span class="hero__title-line">Zympfhor</span>
+              <span class="hero__title-line">Nowy sklep</span>
+              <span class="hero__title-line">dyfuzorów.</span>
+            </h1>
+            <p class="hero__lead" data-i18n="hero.lead">
+              Zympfhor to idealne miejsce dla Ciebie, jeśli szukasz wysokiej jakości ziołowych waporyzatorów.
+            </p>
+            <div class="hero__cta-bar">
+              <button type="button" class="btn btn--primary" data-i18n="hero.ctaPrimary">Kup teraz!</button>
+              <button type="button" class="btn btn--secondary js-scroll-why" data-i18n="hero.ctaSecondary">Dowiedz się więcej</button>
+            </div>
+          </div>
+          <div class="hero__cta">
+            <div class="hero__visual">
+              <img
+                class="hero__illustration"
+                src="hello.svg?v=1.0.0"
+                width="800"
+                height="674"
+                alt=""
+                decoding="async"
+                draggable="false"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--why reveal" id="why">
+        <div class="section__why-inner">
+          <div class="section__why-art">
+            <img
+              class="section__why-illustration"
+              src="why.svg?v=1.0.0"
+              width="960"
+              height="677"
+              alt=""
+              decoding="async"
+              draggable="false"
+            />
+          </div>
+          <div class="section__why-content">
+            <h2 class="section__title section__title--why" data-i18n-html="why.titleHtml">
+              Informacje o,<br />
+              naszym produkcie.
+            </h2>
+
+            <ul class="feature-list">
+          <li class="feature">
+            <span class="feature__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="7" x="3" y="3" rx="1" />
+                <rect width="7" height="7" x="3" y="14" rx="1" />
+                <rect width="7" height="7" x="14" y="14" rx="1" />
+              </svg>
+            </span>
+            <div>
+              <p class="feature__title" data-i18n="features.0.title">Czym jest Zympfhor?</p>
+              <p class="feature__text" data-i18n="features.0.text">
+                Zympfhor to przenośny dyfuzor aromaterapeutyczny niezawierający nikotyny, który zapewnia korzyści płynące z naturalnych mieszanek botanicznych. Pomaga poprawić zdrowie. 
+
+              </p>
+            </div>
+          </li>
+
+          <li class="feature">
+            <span class="feature__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </span>
+            <div>
+              <p class="feature__title" data-i18n="features.1.title">Co jest w środku?</p>
+              <p class="feature__text" data-i18n="features.1.text">
+                Zympfhor to dyfuzor na bazie roślin zawierający innowacyjną mieszankę 2 kluczowych składników botanicznych, opracowaną z myślą o zapewnieniu ukierunkowanych korzyści: łagodzenie stresu (ashwagandha, korzeń maca).
+              </p>
+            </div>
+          </li>
+
+          <li class="feature feature--last">
+            <span class="feature__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+              </svg>
+            </span>
+            <div>
+              <p class="feature__title" data-i18n="features.2.title">Czy istnieją ograniczenia wiekowe?</p>
+              <p class="feature__text" data-i18n="features.2.text">
+                Chociaż żaden z naszych produktów nie ma prawnych ograniczeń wiekowych, polityka naszego działu zakłada, że ​​wszyscy klienci muszą mieć ukończone 18 lat. Dyfuzor Zympfhor nie zawierają ŻADNYCH narkotyków ani substancji nielegalnych . Dyfuzor Zympfhor nie są przeznaczone dla osób poniżej 18. roku życia.
+              </p>
+            </div>
+          </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--trust reveal" id="access">
+        <h2 class="section__title section__title--sm" data-i18n="access.title">Zympfhor, to przyjemność!</h2>
+        <p class="section__body" data-i18n-html="access.bodyHtml">
+          Dyfuzor zapachowy w formie pena to nowoczesne, kompaktowe urządzenie inspirowane wyglądem urządzeń typu vape. Charakteryzuje się minimalistycznym designem oraz prostą obsługą, dzięki czemu jest wygodny w codziennym użytkowaniu i łatwy do przenoszenia.
+
+Jego działanie polega na stopniowym uwalnianiu zapachu, co pozwala utrzymać przyjemną i komfortową atmosferę w otoczeniu. Dzięki temu urządzenie może sprzyjać relaksowi oraz tworzeniu spokojnego klimatu w miejscu użytkowania.<br /><strong>W stosowanych kompozycjach zapachowych mogą znajdować się nuty inspirowane roślinami, takimi jak ashwagandha czy korzeń maca, które są kojarzone z działaniem wspierającym dobre samopoczucie. Dyfuzor łączy nowoczesną formę z funkcją poprawy komfortu przebywania w pomieszczeniu.</strong>
+        </p>
+        <div class="section__cta" data-store-cta>
+          <a class="btn btn--download js-cta-desktop" href="#">
+            <span class="btn__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" x2="12" y1="15" y2="3" />
+              </svg>
+            </span>
+            <span class="btn__label" data-i18n="access.download">Kupuję teraz!</span>
+          </a>
+          
+        </div>
+      </section>
+
+      <footer class="footer reveal">
+        <div class="footer__top">
+          <div class="footer__brand-group">
+            <span class="footer__brand">Zympfhor</span>
+            <nav
+              class="footer__social"
+              aria-label="Media społecznościowe"
+              data-i18n-attr="aria-label|footer.socialNavAria"
+            >
+              <a
+                class="footer__social-link"
+                href="https://www.tiktok.com/@zmincs.app?_r=1&_t=ZN-95ZWHlaudrg"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-attr="aria-label|footer.socialTiktokAria"
+                aria-label="TikTok"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.01 2.96-.02 4.44-.9-.24-1.92-.2-2.71.29-.73.45-1.22 1.22-1.42 2.05-.17.75-.09 1.56.25 2.24.47.98 1.45 1.69 2.52 1.93 1.03.23 2.17.12 3.07-.46 1.01-.65 1.62-1.79 1.62-2.93.01-3.03 0-6.06.02-9.09z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="footer__social-link"
+                href="https://discord.gg/jEcy26Xa"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-attr="aria-label|footer.socialDiscordAria"
+                aria-label="Discord"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"
+                  />
+                </svg>
+              </a>
+            </nav>
+          </div>
+          <div class="footer__top-actions">
+            <nav class="footer__nav" data-i18n-attr="aria-label|footer.navAria" aria-label="Stopka">
+              <a href="#" class="js-open-security-modal" data-i18n="footer.description">Opis</a>
+              <a href="#" class="js-open-documents-modal" data-i18n="footer.documents">Dokumenty</a>
+              <a href="#" class="js-open-contact-modal" data-i18n="footer.contact">Kontakt</a>
+            </nav>
+          </div>
+        </div>
+        <p class="footer__legal" data-i18n="footer.legal">
+          © 2026 Zympfhor. Wszelkie prawa zastrzeżone.
+        </p>
+      </footer>
+    </div>
+
+    <div class="security-modal" id="security-modal" hidden>
+      <div class="security-modal__backdrop js-security-modal-close" aria-hidden="true"></div>
+      <div
+        class="security-modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="security-modal-heading"
+      >
+        <button
+          type="button"
+          class="security-modal__panel-close js-security-modal-close"
+          data-i18n-attr="aria-label|footer.modalCloseAria"
+          aria-label="Zamknij"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="security-modal__panel-inner">
+          <h2 id="security-modal-heading" class="section__title security-modal__title" tabindex="-1" data-i18n="footer.description">
+            Opis
+          </h2>
+          <p class="section__body security-modal__body" data-i18n-html="footer.securityModalBodyHtml">
+            Nowoczesny dyfuzor zapachowy w formie pena to kompaktowe i wygodne w użyciu urządzenie, które łączy minimalistyczny design z funkcjonalnością. Dzięki niewielkim rozmiarom możesz mieć go zawsze przy sobie i korzystać z niego w dowolnym miejscu <button type="button" class="security-modal__inline-link js-open-e2ee-modal">Urządzenie stopniowo uwalnia delikatny zapach, tworząc przyjemną i spokojną atmosferę wokół Ciebie</button> - Idealnie sprawdza się w chwilach, gdy chcesz się wyciszyć, poprawić komfort otoczenia lub po prostu zadbać o lepszy nastrój.
+Starannie dobrane kompozycje zapachowe inspirowane naturalnymi nutami sprawiają, że korzystanie z dyfuzora staje się prostym sposobem na codzienny relaks i lepsze samopoczucie.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="security-modal e2ee-modal" id="e2ee-modal" hidden>
+      <div class="security-modal__backdrop js-e2ee-modal-close" aria-hidden="true"></div>
+      <div
+        class="security-modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="e2ee-modal-heading"
+      >
+        <button
+          type="button"
+          class="security-modal__panel-close js-e2ee-modal-close"
+          data-i18n-attr="aria-label|footer.modalCloseAria"
+          aria-label="Zamknij"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="security-modal__panel-inner">
+          <h2 id="e2ee-modal-heading" class="section__title security-modal__title" tabindex="-1" data-i18n="footer.e2eeModalTitle">
+            Dla świadomości
+          </h2>
+          <div class="section__body security-modal__body security-modal__body--rich" data-i18n-html="footer.e2eeModalBodyHtml"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="security-modal contact-modal" id="contact-modal" hidden>
+      <div class="security-modal__backdrop js-contact-modal-close" aria-hidden="true"></div>
+      <div
+        class="security-modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="contact-modal-heading"
+      >
+        <button
+          type="button"
+          class="security-modal__panel-close js-contact-modal-close"
+          data-i18n-attr="aria-label|footer.modalCloseAria"
+          aria-label="Zamknij"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="security-modal__panel-inner">
+          <h2 id="contact-modal-heading" class="section__title security-modal__title" tabindex="-1" data-i18n="footer.contact">
+            Kontakt
+          </h2>
+          <ul class="contact-modal__channels" role="list">
+            <li>
+              <a
+                class="contact-modal__channel"
+                href="https://discord.gg/jEcy26Xa"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-attr="aria-label|footer.contactXAria"
+                aria-label="Discord — profil"
+              >
+                <span class="contact-modal__channel-icon" aria-hidden="true">
+                  <img src="icondiscord.svg" alt="" width="28" height="28" decoding="async" draggable="false" />
+                </span>
+                <span class="contact-modal__channel-label" data-i18n="footer.contactXLabel">Discord</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="contact-modal__channel"
+                href="https://www.tiktok.com/@zmincs.app?_r=1&_t=ZN-95ZWHlaudrg"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n-attr="aria-label|footer.contactLinkedInAria"
+                aria-label="TikTok — profil"
+              >
+                <span class="contact-modal__channel-icon" aria-hidden="true">
+                  <img src="icontiktok.svg" alt="" width="28" height="28" decoding="async" draggable="false" />
+                </span>
+                <span class="contact-modal__channel-label" data-i18n="footer.contactLinkedInLabel">TikTok</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="security-modal documents-modal" id="documents-modal" hidden>
+      <div class="security-modal__backdrop js-documents-modal-close" aria-hidden="true"></div>
+      <div
+        class="security-modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="documents-modal-heading"
+      >
+        <button
+          type="button"
+          class="security-modal__panel-close js-documents-modal-close"
+          data-i18n-attr="aria-label|footer.modalCloseAria"
+          aria-label="Zamknij"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="security-modal__panel-inner documents-modal__inner">
+          <h2 id="documents-modal-heading" class="section__title security-modal__title" tabindex="-1" data-i18n="footer.documents">
+            Dokumenty
+          </h2>
+          <span id="documents-i18n-loading" data-i18n="footer.documentsLoading" hidden>Wczytywanie…</span>
+          <span id="documents-i18n-load-error" data-i18n="footer.documentsLoadError" hidden>Nie udało się wczytać dokumentu.</span>
+          <div class="documents-modal__tabs" role="tablist" data-i18n-attr="aria-label|footer.documents">
+            <button
+              type="button"
+              class="documents-modal__tab js-documents-tab"
+              role="tab"
+              id="documents-tab-terms"
+              aria-selected="true"
+              aria-controls="documents-tabpanel"
+              data-doc="terms"
+              data-i18n="footer.documentsTabTerms"
+            >
+              Regulamin
+            </button>
+            <button
+              type="button"
+              class="documents-modal__tab js-documents-tab"
+              role="tab"
+              id="documents-tab-privacy"
+              aria-selected="false"
+              aria-controls="documents-tabpanel"
+              data-doc="privacy"
+              data-i18n="footer.documentsTabPrivacy"
+            >
+              Polityka prywatności
+            </button>
+          </div>
+          <div
+            class="documents-modal__scroll"
+            id="documents-tabpanel"
+            role="tabpanel"
+            aria-labelledby="documents-tab-terms"
+          >
+            <div class="documents-modal__body section__body security-modal__body" id="documents-modal-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="security-modal download-choice-modal" id="download-choice-modal" hidden>
+      <div class="security-modal__backdrop js-download-choice-close" aria-hidden="true"></div>
+      <div
+        class="security-modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="download-choice-heading"
+      >
+        <button
+          type="button"
+          class="security-modal__panel-close js-download-choice-close"
+          data-i18n-attr="aria-label|footer.modalCloseAria"
+          aria-label="Zamknij"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="security-modal__panel-inner">
+          <h2 id="download-choice-heading" class="section__title security-modal__title" tabindex="-1" data-i18n="access.downloadModalTitle">
+            Podsumowanie
+          </h2>
+          <div class="download-choice__grid" role="list">
+            <div class="download-choice__card download-choice__card--disabled" role="listitem" aria-disabled="true">
+              <h3 class="download-choice__card-title" data-i18n="access.downloadModalDesktop">Witaj</h3>
+              <p class="download-choice__card-hint" data-i18n="access.downloadModalDesktopSoon">aby kontyunować zakupy zgadzasz się na nasz Regulamin oraz Politykę prywatności!</p>
+            </div>
+            <div class="download-choice__card" role="listitem">
+              <h3 class="download-choice__card-title" data-i18n="access.downloadModalWeb">Przechodzę dalej</h3>
+              <a class="btn btn--primary download-choice__cta" href="prace.html" data-i18n="access.downloadModalUseWeb">kontyunować</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js?v=1.0.2" defer></script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ecc2e11bf4cbf2a',t:'MTc3NjI2OTAwMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
