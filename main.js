@@ -943,3 +943,22 @@
       initDownloadChoiceModal();
     });
 })();
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.getElementById("loader");
+  const btn = document.querySelector(".download-choice__cta");
+
+  if (!loader || !btn) return;
+
+  const ANIMATION_TIME = 2400; 
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    loader.classList.add("active");
+    document.body.classList.add("loading");
+
+    setTimeout(() => {
+      window.location.href = btn.href;
+    }, ANIMATION_TIME);
+  });
+});
